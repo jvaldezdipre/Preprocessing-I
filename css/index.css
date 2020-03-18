@@ -107,10 +107,6 @@ section {
 body {
   line-height: 1;
 }
-ol,
-ul {
-  list-style: none;
-}
 blockquote,
 q {
   quotes: none;
@@ -139,16 +135,23 @@ body {
   width: 100%;
 }
 p {
-  font-size: 1.2rem;
+  font-size: 0.9rem;
+  font-weight: 300;
+  line-height: 1.2rem;
+  margin: 10px 0px;
 }
 li {
-  font-size: 1.2rem;
+  font-size: 0.9rem;
+  font-weight: 300;
+  margin-top: 10px;
 }
 h2 {
   font-size: 2rem;
+  color: #8e9694;
+  letter-spacing: 2px;
 }
 h4 {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 .main-container {
   width: 1000px;
@@ -180,14 +183,13 @@ header .heading h1 {
   color: #fbfbfb;
 }
 header .heading p {
-  font-size: 2rem;
+  font-size: 1.5rem;
   margin: 10px;
   color: #fbfbfb;
 }
 /* -----SECTION----- */
 .section-container {
   display: flex;
-  height: 50vh;
 }
 .section-container .info {
   width: 40%;
@@ -196,24 +198,25 @@ header .heading p {
   flex-direction: column;
   align-items: center;
 }
+.section-container .info h2 {
+  margin-bottom: 10px;
+}
 .section-container .info div {
   margin: 20px 0px;
 }
 .section-container .info .personal-info {
-  background-color: lightblue;
   width: 80%;
 }
 .section-container .info .contact {
   width: 80%;
-  background-color: lightblue;
 }
 .section-container .info .education {
   width: 80%;
-  background-color: lightblue;
 }
 .section-container .work {
   width: 60%;
   background-color: #e5e5e5;
+  padding: 0px 0px 0px 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -222,11 +225,9 @@ header .heading p {
   margin: 20px 0px;
 }
 .section-container .work .skills {
-  background-color: lightcoral;
   width: 90%;
 }
 .section-container .work .experience {
-  background-color: lightcoral;
   width: 90%;
   display: flex;
   flex-direction: column;

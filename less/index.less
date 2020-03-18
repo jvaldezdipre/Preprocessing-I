@@ -109,10 +109,7 @@ section {
 body {
    line-height: 1;
 }
-ol,
-ul {
-   list-style: none;
-}
+
 blockquote,
 q {
    quotes: none;
@@ -144,16 +141,23 @@ body {
    width: 100%;
 }
 
+ul {
+}
 p {
-   font-size: @text-font;
+   .weight-size();
+   line-height: 1.2rem;
+   margin: 10px 0px;
 }
 
 li {
-   font-size: @text-font;
+   .weight-size();
+   margin-top: 10px;
 }
 
 h2 {
    font-size: @h2-font;
+   color: #8e9694;
+   letter-spacing: 2px;
 }
 
 h4 {
@@ -166,11 +170,16 @@ h4 {
    align-items: center;
 }
 
+.weight-size() {
+   font-size: @text-font;
+   font-weight: 300;
+}
+
 @heading-color: #fbfbfb;
 @h2-color: #8e9694;
-@text-font: 1.2rem;
+@text-font: 0.9rem;
 @h2-font: 2rem;
-@h4-font: 1.5rem;
+@h4-font: 1.2rem;
 
 .main-container {
    width: 1000px;
@@ -203,7 +212,7 @@ header {
          color: @heading-color;
       }
       p {
-         font-size: 2rem;
+         font-size: 1.5rem;
          margin: 10px;
          color: @heading-color;
       }
@@ -213,46 +222,50 @@ header {
 /* -----SECTION----- */
 .section-container {
    display: flex;
-   height: 50vh;
    .info {
       width: 40%;
       background-color: #fbfbfb;
       .display-flex();
+
+      h2 {
+         margin-bottom: 10px;
+      }
 
       div {
          margin: 20px 0px;
       }
 
       .personal-info {
-         background-color: lightblue;
+         //  background-color: lightblue;
          width: 80%;
       }
 
       .contact {
          width: 80%;
-         background-color: lightblue;
+         //  background-color: lightblue;
       }
 
       .education {
          width: 80%;
-         background-color: lightblue;
+         //  background-color: lightblue;
       }
    }
 
    .work {
       width: 60%;
       background-color: #e5e5e5;
+      padding: 0px 0px 0px 10px;
       .display-flex();
       div {
          margin: 20px 0px;
       }
       .skills {
-         background-color: lightcoral;
+         //  background-color: lightcoral;
          width: 90%;
       }
 
       .experience {
-         background-color: lightcoral;
+         //  background-color: lightcoral;
          width: 90%;
          display: flex;
          flex-direction: column;
